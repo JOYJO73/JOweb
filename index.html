@@ -1,128 +1,646 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>游戏设计项目展示</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			.image.fit img {
-    			width: 100%;
-    			height: 270px;      /* 你可以根据需要调整高度 */
-    			object-fit: cover;  /* 保证图片填满且裁剪 */
-    			display: block;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+  <title>游戏设计项目展示 - 徐家毅</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="徐家毅的游戏设计项目展示网站">
+  <meta name="keywords" content="游戏设计, Unity, Unreal Engine, UI设计, PS作品">
+  <meta name="author" content="徐家毅">
+  <link rel="preload" href="assets/css/fonts/kuaikanshijieti.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/css/fonts/WDXLLubrifontSC-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <!-- 内容特定的样式 -->
+  <style>
+    #video-placeholder {
+      background-image: url('assets/img/unityPic2.png');
+    }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1 style="line-height:1.4;">游戏设计项目展示<br /><span style="text-transform:lowercase;">from徐家毅</span></h1>
-						<p>毕业于 <b>广东工业大学</b><br />热衷于<b>游戏开发</b></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly"></a></li>
-						</ul>
-					</div>
+    #video-placeholder-unreal {
+      background-image: url('assets/img/unrealPic2.png');
+    }
+  </style>
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">我的作品</a>
-					</header>
+<body>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">项目展示</a></li>
-							<li><a href="#footer">联系我</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="mailto:JOJY37373@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</nav>
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0" onclick="navigateToSection(0)">
+              <i style="color: #0f33ff;" class="fas fa-star fa-2x"></i>
+              <p>Project Showcase Of Xu</p>
+            </a>
+            <button class="header--cta cta" style="font-size: 1.5vw;">获取附件</button>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>首页</span></li>
+              <li><span>Unity项目</span></li>
+              <li><span>UE5项目</span></li>
+              <li><span>PS作品</span></li>
+              <li><span>关于我</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1 style="font-family: 'WDXL Lubrifont SC'">
+                    游戏设计<br>项目展示<br><span style="font-family: 'Montserrat', sans-serif;">By</span> 徐家毅
+                  </h1>
+                  <button class="cta">关于我
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                  <p class="guide-text">
+                    <span class="desktop-text">点击下方文字查看项目</span>
+                    <span class="mobile-text">下拉查看项目<span style="opacity: 0.57; font-style: italic; font-size: 0.8rem;">
+                        *使用电脑访问以获取完整信息</span></span>
+                  </p>
+                  <img src="assets/img/introduction-visual.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <a href="#0" onclick="navigateToSection(1)">
+                    <h3>Unity项目</h3>
+                    <p>使用Unity引擎开发的完整游戏框架，展现游戏系统设计能力。</p>
+                  </a>
+                  <a href="#0" onclick="navigateToSection(2)">
+                    <h3>UE5项目</h3>
+                    <p>使用Unreal Engine的UMG系统进行UI界面设计与实现。</p>
+                  </a>
+                  <a href="#0" onclick="navigateToSection(3)">
+                    <h3>PS作品</h3>
+                    <p>个人美术创作与设计作品展示，包含海报设计及插画创作。</p>
+                  </a>
+                </div>
+              </div>
+            </li>
 
-				<!-- Main -->
-					<div id="main">
+            <li class="l-section section">
+              <div class="unity">
+                <!-- 视频区域 -->
+                <div class="video-section">
+                  <!-- 标题区域 -->
+                  <div class="project-title">
+                    <h2><span style="font-family: 'Montserrat';">RPG</span>游戏架构开发</h2>
+                  </div>
+                  <div class="video-wrapper">
+                    <div id="video-placeholder">
+                      <i class="fas fa-play" style="font-size: 3em; color: #0f33ff;"></i>
+                    </div>
+                    <div id="video-container" style="display: none;"></div>
+                  </div>
+                  <div class="video-description">
+                    <h3>项目概述</h3>
+                    <p>
+                      使用Unity开发的高完成度游戏Demo，手工设计了FSM架构，采用了模块化的设计思路，灵活选用组合、继承、单例等设计模式，使得项目结构清晰，易于后续的功能扩展和维护，在一定程度上展示了我对Unity开发全栈的熟悉。
+                    </p>
+                  </div>
+                </div>
 
-						<!-- Projects -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">Unity项目</span>
-										<h2><a href="Unity.html">Unity游戏Demo<br />
-										</a></h2>
-									</header>
-									<a href="Unity.html" class="image fit"><img src="images/unityPic.png" alt="Unity项目截图" /></a>
-									<p>这是我使用Unity开发的第一个游戏项目，包含了完整的游戏系统设计和UI界面实现。用以展示我的Unity开发技能。</p>
-									<ul class="actions special">
-										<li><a href="Unity.html" class="button">查看详情</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Unreal Engine项目</span>
-										<h2><a href="Unreal Engine.html">UMG系统的UI拼接<br />
-										</a></h2>
-									</header>
-									<a href="Unreal Engine.html" class="image fit"><img src="images/unrealPic.png" alt="UE项目截图" /></a>
-									<p>这是我使用Unreal Engine的UMG系统进行的UI拼接设计，旨在展现我在UE环境下的UI设计能力。</p>
-									<ul class="actions special">
-										<li><a href="Unreal Engine.html" class="button">查看详情</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">Photoshop项目</span>
-										<h2><a href="Photoshop.html">个人美术向作品<br />
-										</a></h2>
-									</header>
-									<a href="Photoshop.html" class="image fit"><img src="images/临摹.jpg" alt="UE项目截图" /></a>
-									<p>这是我在校学生会期间产出的一些宣传作品，以及部分个人美术作品，用以展现个人审美能力。</p>
-									<ul class="actions special">
-										<li><a href="Photoshop.html" class="button">查看详情</a></li>
-									</ul>
-								</article>
-							</section>
+                <!-- 右侧信息区域 -->
+                <div class="project-info">
+                  <div class="info-section">
+                    <h4>主要功能</h4>
+                    <ul>
+                      <li>完整的游戏架构</li>
+                      <li>仓库与装备系统</li>
+                      <li>流畅的UI界面</li>
+                      <li>玩家技能设计</li>
+                      <li>音频管理系统</li>
+                    </ul>
+                  </div>
 
-					</div>
+                  <div class="info-section">
+                    <h4>技术栈</h4>
+                    <ul>
+                      <li>Unity 6</li>
+                      <li>C# 脚本编程</li>
+                      <li>DOTween</li>
+                      <li>UGUI系统</li>
+                      <li>动画系统</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="contact-info">
-								<h3>联系方式</h3>
-								<div class="contact-item">
-									<h4>邮箱</h4>
-									<p><a href="mailto:JOJY37373@outlook.com">JOJY37373@outlook.com</a></p>
-								</div>
-							</section>
-						</section>
-					</footer>
+            <li class="l-section section">
+              <div class="unreal">
+                <!-- 视频区域 -->
+                <div class="video-section">
+                  <!-- 标题区域 -->
+                  <div class="project-title">
+                    <h2><span style="font-family: 'Montserrat';">DS2 UI</span>界面复刻</h2>
+                  </div>
+                  <div class="video-wrapper">
+                    <div id="video-placeholder-unreal">
+                      <i class="fas fa-play" style="font-size: 3em; color: #0f33ff;"></i>
+                    </div>
+                    <div id="video-container-unreal" style="display: none;"></div>
+                  </div>
+                  <div class="video-description">
+                    <h3>项目概述</h3>
+                    <p>使用UMG对《死亡搁浅2》UI界面的复刻，包含自制的动态UI材质与动态分布函数，精确的UI切分，可以展示我的UI拼接与还原能力以及对UI需求的实现思路。</p>
+                  </div>
+                </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; 徐家毅</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+                <!-- 右侧信息区域 -->
+                <div class="project-info">
+                  <div class="info-section">
+                    <h4>主要功能</h4>
+                    <ul>
+                      <li>深度复刻的UI界面</li>
+                      <li>良好的切分图标</li>
+                      <li>动态UI分布</li>
+                      <li>自定义材质</li>
+                      <li>响应式布局</li>
+                    </ul>
+                  </div>
 
-			</div>
+                  <div class="info-section">
+                    <h4>技术栈</h4>
+                    <ul>
+                      <li>Unreal Engine 5</li>
+                      <li>蓝图节点编程</li>
+                      <li>材质编辑器</li>
+                      <li>UMG系统</li>
+                      <li>动画系统</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <li class="l-section section">
+              <div class="gallery">
+                <div class="gallery-header">
+                  <h2><span style="font-family: 'Montserrat';">Photoshop</span> 作品集</h2>
+                </div>
 
-	</body>
+                <!-- 项目说明文字 - 移动端隐藏 -->
+                <div class="gallery-description">
+                  <h3 style="color: #0f33ff;font-size: 1.3vw;">技术栈</h3>
+                  <ul>
+                    <li>Photoshop</li>
+                    <li>素材拼接</li>
+                    <li>交付输出</li>
+                    <li>视觉优化</li>
+                    <li>UI设计</li>
+                  </ul>
+                </div>
+                <div class="gallery-description" style="top: 50%;">
+                  <h3 style="color: #0f33ff;font-size: 1.3vw;">页面说明</h3>
+                  <p>
+                    此页展示图皆为独立产出的Photoshop作品，包含在校学生会期间创作的宣传海报和个人美术作品。用以展示设计思维、视觉传达能力以及美术功底。
+                  </p>
+                </div>
+
+
+                <div class="gallery-container">
+                  <!-- 主展示区域 -->
+                  <div class="gallery-main">
+                    <div class="main-image-container">
+                      <img id="mainImage" src="assets/img/十大歌手海报.jpg" alt="十大歌手海报">
+                    </div>
+                  </div>
+
+                  <!-- 缩略图网格 -->
+                  <div class="gallery-thumbnails">
+                    <div class="thumbnail-grid">
+                      <div class="thumbnail active" data-image="assets/img/十大歌手海报.jpg" data-title="十大歌手海报"
+                        data-description="校园活动海报设计，运用现代设计理念，体现青春活力的视觉效果" data-tags="海报设计,平面设计,视觉传达">
+                        <img src="assets/img/十大歌手海报.jpg" alt="十大歌手海报">
+                        <div class="thumbnail-overlay">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+
+                      <div class="thumbnail" data-image="assets/img/以书会友.png" data-title="以书会友"
+                        data-description="读书会活动主题设计，融合中国传统文化元素与现代设计语言" data-tags="主题设计,文化创意,传统与现代">
+                        <img src="assets/img/以书会友.png" alt="以书会友">
+                        <div class="thumbnail-overlay">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+
+                      <div class="thumbnail" data-image="assets/img/临摹.jpg" data-title="人物肖像临摹"
+                        data-description="通过临摹练习提升绘画技法，专注于人物表情与光影的细节处理" data-tags="临摹练习,人物绘画,技法提升">
+                        <img src="assets/img/临摹.jpg" alt="人物肖像临摹">
+                        <div class="thumbnail-overlay">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+
+                      <div class="thumbnail" data-image="assets/img/骑士.jpg" data-title="骑士"
+                        data-description="角色概念设计，展现中世纪骑士的英勇形象与装备细节" data-tags="角色设计,概念艺术,中世纪风格">
+                        <img src="assets/img/骑士.jpg" alt="骑士">
+                        <div class="thumbnail-overlay">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+
+                      <div class="thumbnail" data-image="assets/img/鸟.png" data-title="飞鸟"
+                        data-description="自然主题插画，运用细腻的笔触表现鸟类的优美形态" data-tags="插画设计,自然主题,动物绘画">
+                        <img src="assets/img/鸟.png" alt="飞鸟">
+                        <div class="thumbnail-overlay">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+
+                      <div class="thumbnail" data-image="assets/img/苹果icon.png" data-title="图标设计"
+                        data-description="UI图标设计练习，追求简洁明了的视觉表达" data-tags="图标设计,UI设计,简约风格">
+                        <img src="assets/img/苹果icon.png" alt="图标设计">
+                        <div class="thumbnail-overlay">
+                          <i class="fas fa-search-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="l-section section">
+              <div class="about">
+                <div class="about--banner">
+                  <h2 style="margin-bottom: -0.1em;"> <i class="fas fa-gamepad"
+                      style="color:#0f33ff;font-size:1.1em;"></i><br><span
+                      style="font-family: 'kuaikanshijieti';font-size: 1.185em;"> 我对游戏<br><span
+                        style="font-size: 1.3em;">充满<span
+                          style="font-size: 1.2em;vertical-align: top;">热情</span></span></span></h2>
+                  <a style="font-size: 1vw;" href="assets/作品集.pdf" download="徐家毅_游戏设计作品集.pdf">下载作品集
+                    <span class="btn-background"></span>
+                    <span>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                        style="enable-background:new 0 0 150 118; transform: rotate(90deg);" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                  <br>
+                  <h2 style="margin-top: 0.37em;color: #7c7c7c;"> ///////<span
+                      style="font-size: 0.37em;padding-left: 0.3em;font-style: italic;"> 期待与您联系</span></h2>
+                  <img src="assets/img/about-visual.png" alt="About Me">
+                </div>
+                <div class="about--options">
+                  <a href="#0" data-info="education">
+                    <h3>教育背景</h3>
+                  </a>
+                  <a href="#0" data-info="philosophy">
+                    <h3>特长爱好</h3>
+                  </a>
+                  <a href="#0" data-info="skills">
+                    <h3>职业规划</h3>
+                  </a>
+                </div>
+                <div class="about--info" id="aboutInfo"
+                  style="position: absolute; right: -8vw; top: 50%; transform: translateY(-50%); width: 17vw; opacity: 0; transition: opacity 0.63s ease; font-size: 1vw;">
+                  <div class="info-content" id="educationInfo" style="display: none;">
+                    <h4>教育背景</h4>
+                    <p style="margin-bottom: 0.7em;">2025年毕业于广东工业大学-通信工程专业</p>
+                    <p style="margin-bottom: 0.7em;">毕业设计题目：基于深度学习的图像压缩研究与实现</p>
+                    <p style="margin-bottom: 0.7em;">主修课程：高级语言程序设计、数据结构、嵌入式软件开发、线性代数、概率论与数理统计、数字电子技术、信号与系统、通信原理、数字信号处理
+                    </p>
+                  </div>
+                  <div class="info-content" id="philosophyInfo" style="display: none;">
+                    <h4>特长爱好</h4>
+                    <p style="margin-bottom: 0.7em;">闲暇娱乐：绘画\吉他\钢琴</p>
+                    <p style="margin-bottom: 0.7em;">体育技能：网球\滑雪</p>
+                    <p style="margin-bottom: 0.7em;">热爱游戏！涉猎各种类型的游戏，喜欢探索不同类型的游戏机制和玩法，最喜欢小而美的有趣游戏和工业怪兽级的大型游戏。</p>
+                  </div>
+                  <div class="info-content" id="skillsInfo" style="display: none;">
+                    <h4>职业规划</h4>
+                    <p style="margin-bottom: 0.7em;">希望深耘游戏领域，不断提升自己各项技能水平，熟悉游戏开发流程的各个环节。</p>
+                    <p style="margin-bottom: 0.7em;">希望朝技术美术/项目制作人方向发展。</p>
+                    <p style="margin-bottom: 0.7em;">希望能够参与新颖有趣的游戏项目，挑战自我，创造出为玩家热爱的游戏作品。</p>
+                  </div>
+                </div>
+                <br><br><br><a href="mailto:JOJY37373@outlook.com"><i class="fas fa-envelope"
+                    style="font-size:1.73em;margin-right:0.5em;"></i>JOJY37373@outlook.com</a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">首页</li>
+      <li>Unity项目</li>
+      <li>UE5项目</li>
+      <li>PS作品</li>
+      <li>关于我</li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+  <script>
+    // 自定义导航函数
+    function navigateToSection(sectionIndex) {
+      // 获取当前活动页面的索引
+      var currentSection = $('.side-nav').find('.is-active');
+      var currentIndex = $('.side-nav').children().index(currentSection);
+      var lastIndex = $('.side-nav').children().length - 1;
+
+      // 移除所有活动状态
+      $('.side-nav li, .outer-nav li').removeClass('is-active');
+      $('.l-section').removeClass('section--is-active');
+
+      // 设置新的活动状态
+      $('.side-nav li').eq(sectionIndex).addClass('is-active');
+      $('.outer-nav li').eq(sectionIndex).addClass('is-active');
+      $('.l-section').eq(sectionIndex).addClass('section--is-active');
+
+      // 处理页面切换动画效果
+      $('.main-content .section').children().removeClass('section--next section--prev');
+
+      if (currentIndex === lastIndex && sectionIndex === 0 || currentIndex === 0 && sectionIndex === lastIndex) {
+        // 首页和最后页之间的切换，不添加prev/next效果
+        $('.main-content .section').children().removeClass('section--next section--prev');
+      } else if (sectionIndex > currentIndex) {
+        // 向前翻页
+        $('.main-content').children().eq(currentIndex).children().addClass('section--next');
+      } else if (sectionIndex < currentIndex) {
+        // 向后翻页
+        $('.main-content').children().eq(currentIndex).children().addClass('section--prev');
+      }
+
+      // 控制获取附件按钮显示：只在中间页面（第2、3、4页）显示
+      if (sectionIndex !== 0 && sectionIndex !== lastIndex) {
+        $('.header--cta').addClass('is-active');
+      } else {
+        $('.header--cta').removeClass('is-active');
+      }
+
+      // 画廊自动播放控制
+      if (typeof window.galleryAutoPlay !== 'undefined') {
+        if (sectionIndex === 3) { // PS作品页面（索引为3）
+          // 进入画廊页面，如果自动播放还没被用户停止，则重新启动
+          if (window.galleryAutoPlay.shouldAutoPlay && !window.galleryAutoPlay.isAutoPlaying) {
+            window.galleryAutoPlay.start();
+          }
+        } else {
+          // 离开画廊页面，暂停自动播放
+          window.galleryAutoPlay.pause();
+        }
+      }
+
+      // 如果存在更新函数，调用它们
+      if (typeof updateNavs === 'function') {
+        updateNavs(sectionIndex);
+      }
+      if (typeof updateContent === 'function') {
+        updateContent(currentIndex, sectionIndex, lastIndex);
+      }
+    }
+
+    // About section hover effects
+    $(document).ready(function () {
+      const aboutInfo = $('#aboutInfo');
+      const infoContents = $('.info-content');
+      let currentTimeout = null;
+
+      $('.about--options a').hover(
+        function () {
+          // 鼠标悬停时
+          const infoType = $(this).data('info');
+          const targetInfo = $('#' + infoType + 'Info');
+
+          // 清除任何现有的超时
+          if (currentTimeout) {
+            clearTimeout(currentTimeout);
+            currentTimeout = null;
+          }
+
+          // 立即隐藏所有内容并显示新内容
+          infoContents.hide();
+          targetInfo.show();
+          aboutInfo.css('opacity', '1');
+        },
+        function () {
+          // 鼠标离开时
+          aboutInfo.css('opacity', '0');
+          currentTimeout = setTimeout(function () {
+            infoContents.hide();
+          }, 200); // 缩短等待时间
+        }
+      );
+
+      // 简化的视频加载函数
+      function loadVideo() {
+        const placeholder = $('#video-placeholder');
+        const container = $('#video-container');
+
+        // 直接创建并显示 bilibili iframe 播放器
+        const video = $(`
+          <iframe 
+            src="https://player.bilibili.com/player.html?bvid=BV1C8ubzZEoU&autoplay=1&high_quality=1&danmaku=0" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+            allowfullscreen="true"
+            scrolling="no"
+            frameborder="0"
+            sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">
+          </iframe>
+        `);
+
+        // 立即切换显示，无需等待加载
+        placeholder.fadeOut(300, function () {
+          container.html(video).fadeIn(300);
+        });
+      }
+
+      function loadUnrealVideo() {
+        const placeholder = $('#video-placeholder-unreal');
+        const container = $('#video-container-unreal');
+
+        // 直接创建并显示视频播放器
+        const video = $(`
+          <video 
+            controls 
+            preload="metadata" 
+            autoplay
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+            <source src="assets/DS2复刻.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+          </video>
+        `);
+
+        // 立即切换显示并尝试自动播放
+        placeholder.fadeOut(300, function () {
+          container.html(video).fadeIn(300, function () {
+            // 动画完成后尝试播放视频
+            const videoElement = video[0];
+            if (videoElement) {
+              videoElement.play().catch(function (error) {
+                console.log('自动播放被阻止:', error);
+                // 如果自动播放被阻止，保持controls显示让用户手动播放
+              });
+            }
+          });
+        });
+      }
+
+      // 点击占位符加载视频
+      $(document).on('click', '#video-placeholder', loadVideo);
+      $(document).on('click', '#video-placeholder-unreal', loadUnrealVideo);
+
+      // 画廊功能
+      const thumbnails = $('.thumbnail');
+      const mainImage = $('#mainImage');
+      let currentImageIndex = 0;
+      
+      // 全局画廊自动播放对象
+      window.galleryAutoPlay = {
+        timer: null,
+        isAutoPlaying: false,
+        shouldAutoPlay: true, // 用户是否允许自动播放（第一次点击后设为false）
+        interval: 3000, // 3秒切换一次
+
+        // 自动切换到下一张图片
+        next: function() {
+          if (!this.shouldAutoPlay || !this.isAutoPlaying) return;
+          
+          currentImageIndex = (currentImageIndex + 1) % thumbnails.length;
+          const nextThumbnail = thumbnails.eq(currentImageIndex);
+          const imageSrc = nextThumbnail.data('image');
+          const title = nextThumbnail.data('title');
+
+          // 淡出当前图片，然后淡入新图片
+          mainImage.fadeOut(390, function () {
+            // 更新图片源
+            mainImage.attr('src', imageSrc).attr('alt', title);
+            // 淡入新图片
+            mainImage.fadeIn(390);
+          });
+
+          // 更新活动状态
+          thumbnails.removeClass('active');
+          nextThumbnail.addClass('active');
+        },
+
+        // 启动自动播放
+        start: function() {
+          if (!this.shouldAutoPlay) return;
+          
+          this.isAutoPlaying = true;
+          if (this.timer) {
+            clearInterval(this.timer);
+          }
+          this.timer = setInterval(() => this.next(), this.interval);
+        },
+
+        // 暂停自动播放（不改变shouldAutoPlay状态）
+        pause: function() {
+          this.isAutoPlaying = false;
+          if (this.timer) {
+            clearInterval(this.timer);
+            this.timer = null;
+          }
+        },
+
+        // 完全停止自动播放（用户主动停止）
+        stop: function() {
+          this.shouldAutoPlay = false;
+          this.pause();
+        }
+      };
+
+      // 缩略图点击事件
+      thumbnails.on('click', function () {
+        const $this = $(this);
+        const imageSrc = $this.data('image');
+        const title = $this.data('title');
+
+        // 第一次点击时完全停止自动播放
+        if (window.galleryAutoPlay.shouldAutoPlay) {
+          window.galleryAutoPlay.stop();
+        }
+
+        // 淡出当前图片，然后淡入新图片
+        mainImage.fadeOut(390, function () {
+          // 更新图片源
+          mainImage.attr('src', imageSrc).attr('alt', title);
+          // 淡入新图片
+          mainImage.fadeIn(390);
+        });
+
+        // 更新活动状态
+        thumbnails.removeClass('active');
+        $this.addClass('active');
+
+        // 更新当前索引
+        currentImageIndex = thumbnails.index($this);
+      });
+
+      // 页面加载完成后延迟启动自动播放
+      setTimeout(() => {
+        // 检查当前是否在画廊页面（PS作品页面，索引为3）
+        const currentSectionIndex = $('.side-nav .is-active').index();
+        if (currentSectionIndex === 3) {
+          window.galleryAutoPlay.start();
+        }
+      }, 1000);
+
+      // 移动端缩略图拖动功能
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      const thumbnailGrid = $('.thumbnail-grid');
+
+      // 触摸开始
+      thumbnailGrid.on('touchstart mousedown', function (e) {
+        isDown = true;
+        const clientX = e.type === 'touchstart' ? e.originalEvent.touches[0].clientX : e.clientX;
+        startX = clientX - this.offsetLeft;
+        scrollLeft = this.scrollLeft;
+        e.preventDefault(); // 防止默认的拖拽行为
+      });
+
+      // 触摸移动
+      thumbnailGrid.on('touchmove mousemove', function (e) {
+        if (!isDown) return;
+        e.preventDefault();
+        const clientX = e.type === 'touchmove' ? e.originalEvent.touches[0].clientX : e.clientX;
+        const x = clientX - this.offsetLeft;
+        const walk = (x - startX) * 2; // 调整滚动速度
+        this.scrollLeft = scrollLeft - walk;
+      });
+
+      // 触摸结束
+      thumbnailGrid.on('touchend mouseup mouseleave', function () {
+        isDown = false;
+      });
+
+      // 防止拖拽时触发点击事件
+      thumbnailGrid.on('dragstart', function (e) {
+        e.preventDefault();
+      });
+    });
+  </script>
+</body>
+
 </html>
